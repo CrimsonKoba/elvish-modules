@@ -123,11 +123,7 @@ use str
 The =alias:dir= variable determines where the alias files will be saved.
 
 #+begin_src elvish
-if (has-env XDG_DATA_HOME) {
-    var dir = $E:XDG_DATA_HOME/elvish/aliases
-} else {
-    var dir = $E:HOME/.local/share/elvish/aliases
-}
+var dir = $E:HOME/.local/share/elvish/aliases
 #+end_src
 
 The =alias:arg-replacer= variable contains the string that will be used to indicate where the arguments will be inserted in the alias expansion.

@@ -6,11 +6,7 @@
 use re
 use str
 
-if (has-env XDG_DATA_HOME) {
-    var dir = $E:XDG_DATA_HOME/elvish/aliases
-} else {
-    var dir = $E:HOME/.local/share/elvish/aliases
-}
+var dir = $E:HOME/.local/share/elvish/aliases
 
 var arg-replacer = '{}'
 

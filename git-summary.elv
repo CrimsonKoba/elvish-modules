@@ -9,11 +9,7 @@
     fd -H -I -t d '^.git$' ~ | each $path:dir~
   }
 
-if (has-env XDG_DATA_HOME) {
-    var repos-file = $E:XDG_DATA_HOME/elvish/package-data/elvish-themes/git-summary-repos.json
-} else {
-    var repos-file = $E:HOME/.local/share/elvish/package-data/elvish-themes/git-summary-repos.json
-}
+var repos-file = $E:HOME/.local/share/elvish/package-data/elvish-themes/git-summary-repos.json
 
   var stop-gitstatusd-after-use = $false
 
