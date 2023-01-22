@@ -79,13 +79,13 @@ Load some libraries.
 
 #+begin_src elvish
   use path
-  use github.com/zzamboni/elvish-modules/spinners
+  use github.com/CrimsonKoba/elvish-modules/spinners
 #+end_src
 
 We use the segments from the [[file:~/.elvish/lib/github.com/zzamboni/elvish-themes/chain.org][Chain]] theme for the display, so we load that module.
 
 #+begin_src elvish
-  use github.com/zzamboni/elvish-themes/chain
+  use github.com/CrimsonKoba/elvish-themes/chain
 #+end_src
 
 The list of repositories read from the file is cached in =$git-summary:summary-repos=.
