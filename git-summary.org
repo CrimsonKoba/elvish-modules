@@ -105,7 +105,11 @@ Default function used to find repositories for the =&all= option.
 Default location of the file where the list of repositories to show is stored.
 
 #+begin_src elvish :noweb yes
-  var repos-file = ~/.elvish/package-data/elvish-themes/git-summary-repos.json
+if (has-env XDG_DATA_HOME) {
+    var repos-file = $E:XDG_DATA_HOME/elvish/package-data/elvish-themes/git-summary-repos.json
+} else {
+    var repos-file = $E:HOME/.local/share/elvish/package-data/elvish-themes/git-summary-repos.json
+}
 #+end_src
 
 Whether to stop =gitstatusd= after using it.
