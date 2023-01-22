@@ -37,7 +37,7 @@ We use the =re= and =util= modules.
 #+begin_src elvish
   use re
   use str
-  use github.com/zzamboni/elvish-modules/util
+  use github.com/CrimsonKoba/elvish-modules/util
 #+end_src
 
 ** Environment setup

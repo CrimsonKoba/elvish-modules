@@ -180,7 +180,7 @@ During the execution of a spinner, the =spinners:persist= function can be used t
 #+begin_src elvish
   use str
   use path
-  use github.com/zzamboni/elvish-modules/tty
+  use github.com/CrimsonKoba/elvish-modules/tty
 #+end_src
 
 ** Initialization

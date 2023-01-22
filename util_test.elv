@@ -1,7 +1,7 @@
-use github.com/zzamboni/elvish-modules/test
-use github.com/zzamboni/elvish-modules/util
+use github.com/CrimsonKoba/elvish-modules/test
+use github.com/CrimsonKoba/elvish-modules/util
 
-(test:set github.com/zzamboni/elvish-modules/util [
+(test:set github.com/CrimsonKoba/elvish-modules/util [
     (test:set dotify-string [
         (test:is { util:dotify-string "somelongstring" 5 } "somel…" Long string gets dotified)
         (test:is { util:dotify-string "short" 5 }          "short"  Equal-as-limit string stays the same)
